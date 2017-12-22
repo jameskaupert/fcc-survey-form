@@ -11,11 +11,60 @@
 </head>
 
 <body>
-  <header>Your Ballroom Company Logo</header>
+  <header>
+    <h1 id="title">Your Ballroom Company Logo</h1>
+  </header>
   <div class="form-container">
-    <h2>Tell Us About Your Dance Interests!</h2>
+    <p id="description">Tell Us About Your Dance Interests!</p>
 
+    <form action="" id="survey-form">
+
+      <label for="name" id="name-label">Name:
+        <input type="text" name="name" id="name" required placeholder="Enter your name">
+      </label>
+
+      <label for="email" id="email-label">Email:
+        <input type="email" name="email" id="email" required placeholder="Enter your email">
+      </label>
+
+      <p>Have you danced before?</p>
+      <select name="dropdown" id="dropdown">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="number" id="number-label">Years Dancing:
+        <input type="number" name="pastExp" id="number" min="0" max="100" required placeholder="Years">
+      </label>
+
+      <p>Primary Reason for Wanting to Learn to Dance?</p>
+      <label for="reason"><input type="radio" id="competition" name="reason" value="competition">Competition</label>
+      <label for="reason"><input type="radio" id="social" name="reason" value="social">Social Dancing</label>
+      <label for="reason"><input type="radio" id="my-wedding" name="reason" value="my-wedding">My Wedding</label>
+      <label for="reason"><input type="radio" id="other-wedding" name="reason" value="other-wedding">Other Wedding</label>
+      <label for="reason"><input type="radio" id="showdance" name="reason" value="showdance">Showdance</label>
+      <label for="reason"><input type="radio" id="fitness" name="reason" value="fitness">Fitness</label>
+      <label for="reason"><input type="radio" id="therapy" name="reason" value="therapy">Therapy</label>
+
+      <p>Areas of Interest:</p>
+      <label for="interests"><input type="checkbox" name="interests" id="privateLessons" value="Private Lessons">Private Lessons</label>
+      <label for="interests"><input type="checkbox" name="interests" id="groupClasses" value="Group Classes">Group Classes</label>
+      <label for="interests"><input type="checkbox" name="interests" id="danceParties" value="Dance Parties">Dance Parties</label>
+      <label for="interests"><input type="checkbox" name="interests" id="lineDancing" value="Line Dancing">Line Dancing</label>
+      <label for="interests"><input type="checkbox" name="interests" id="fitnessClasses" value="Fitness Classes">Fitness Classes</label>
+
+      <p>Dance Styles that Interest You:</p>
+      <label for="styles"><input type="checkbox" name="styles" id="ballroom" value="ballroom">Smooth &amp; Ballroom: Waltz, Tango, Foxtrot, Viennese Waltz, Quickstep</label>
+      <label for="styles"><input type="checkbox" name="styles" id="latin" value="latin">Rhythm &amp; Latin: Cha Cha, Rumba, East Coast Swing, Jive, Bolero, Mambo, Paso Doble, Samba</label>
+      <label for="styles"><input type="checkbox" name="styles" id="club" value="club">Club: Hustle, Salsa, Bachata, Merengue, West Coast Swing, East Coast Swing, Lindy Hop, Night-Club</label>
+      <label for="styles"><input type="checkbox" name="styles" id="country" value="country">Country: Two-Step, Polka, Triple Two-Step, Night-Club Two-Step, West Coast Swing</label>
+
+      <p>Additional Comments</p>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
   </div>
+  <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
 </body>
 
 </html>

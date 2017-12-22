@@ -1,0 +1,142 @@
+/* Typography */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6rem;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: white;
+}
+
+#description {
+  font-size: 1.25rem;
+}
+
+/* Body & Main Container */
+body {
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Header */
+#title {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Form */
+.form-container {
+  background-color: #ffffff;
+  display: flex;
+  min-width: 320px;
+  max-width: 66%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#description {
+  padding: 2rem;
+}
+
+.name,
+.email,
+.danced-before,
+.exp,
+.primary-reason,
+.areas-of-interest,
+.dance-styles {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  padding-bottom: 1rem;
+}
+
+#name-label,
+#email-label,
+#dropdown-label,
+#number-label,
+#primary-reason-label,
+#areas-of-interest-label,
+#dance-styles-label,
+#comments-label {
+  padding: 0 1rem 0 2rem;
+}
+
+.reasons-container,
+.interests-container,
+.dance-styles-container {
+  padding: 0.5rem 1rem 0 3rem;
+}
+
+.primary-reason,
+.areas-of-interest,
+.dance-styles {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons-container,
+.interests-container,
+.dance-styles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reasons-container label,
+.interests-container label,
+.dance-styles-container label {
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.dance-styles-container label {
+  width: 100%;
+}
+
+@media all and (max-width: 514px) {
+  .reasons-container label {
+  width: 100%;
+  }
+}
+
+.comments {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+}
+
+#comments {
+  margin: 1rem 2rem 2rem 2rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+#submit {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  background-color: #cdcdcd;
+  border: 2px solid #222;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+}
+
+#submit:hover {
+  color: #cdcdcd;
+  background-color: #222;
+}

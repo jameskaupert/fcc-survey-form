@@ -6,63 +6,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Interested in Dance?</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/reset.css">
   <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
-  <header>
-    <h1 id="title">Your Ballroom Company Logo</h1>
-  </header>
-  <div class="form-container">
-    <p id="description">Tell Us About Your Dance Interests!</p>
+  <div class="container">
+    <header>
+      <h1 id="title">Your Ballroom Company Logo</h1>
+    </header>
+    <div class="form-container">
+      <p id="description">Tell Us About Your Dance Interests!</p>
 
-    <form action="" id="survey-form">
+      <div class="form-body">
+        <form action="" id="survey-form">
 
-      <label for="name" id="name-label">Name:
-        <input type="text" name="name" id="name" required placeholder="Enter your name">
-      </label>
+          <div class="name">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" required placeholder=" Enter your name">
+          </div>
 
-      <label for="email" id="email-label">Email:
-        <input type="email" name="email" id="email" required placeholder="Enter your email">
-      </label>
+          <div class="email">
+            <label for="email" id="email-label">Email:&nbsp;</label>
+            <input type="email" name="email" id="email" required placeholder=" Enter your email">
+          </div>
 
-      <p>Have you danced before?</p>
-      <select name="dropdown" id="dropdown">
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
+          <div class="danced-before">
+            <p id="dropdown-label">Have you danced before?</p>
+            <select name="dropdown" id="dropdown">
+              <option value="" disabled="disabled" selected="selected"></option>
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
 
-      <label for="number" id="number-label">Years Dancing:
-        <input type="number" name="pastExp" id="number" min="0" max="100" required placeholder="Years">
-      </label>
+          <div class="exp">
+            <label for="number" id="number-label">Years Dancing:</label>
+            <input type="number" name="pastExp" id="number" min="0" max="100" required placeholder=" Years">
+          </div>
 
-      <p>Primary Reason for Wanting to Learn to Dance?</p>
-      <label for="reason"><input type="radio" id="competition" name="reason" value="competition">Competition</label>
-      <label for="reason"><input type="radio" id="social" name="reason" value="social">Social Dancing</label>
-      <label for="reason"><input type="radio" id="my-wedding" name="reason" value="my-wedding">My Wedding</label>
-      <label for="reason"><input type="radio" id="other-wedding" name="reason" value="other-wedding">Other Wedding</label>
-      <label for="reason"><input type="radio" id="showdance" name="reason" value="showdance">Showdance</label>
-      <label for="reason"><input type="radio" id="fitness" name="reason" value="fitness">Fitness</label>
-      <label for="reason"><input type="radio" id="therapy" name="reason" value="therapy">Therapy</label>
+          <div class="primary-reason">
+            <p id="primary-reason-label">Primary Reason for Wanting to Learn to Dance?</p>
+            <div class="reasons-container">
+              <label for="reason">
+                <input type="radio" id="competition" name="reason" value="competition" required>Competition</label>
+              <label for="reason">
+                <input type="radio" id="social" name="reason" value="social">Social Dancing</label>
+              <label for="reason">
+                <input type="radio" id="my-wedding" name="reason" value="my-wedding">My Wedding</label>
+              <label for="reason">
+                <input type="radio" id="other-wedding" name="reason" value="other-wedding">Other Wedding</label>
+              <label for="reason">
+                <input type="radio" id="showdance" name="reason" value="showdance">Showdance</label>
+              <label for="reason">
+                <input type="radio" id="fitness" name="reason" value="fitness">Fitness</label>
+              <label for="reason">
+                <input type="radio" id="therapy" name="reason" value="therapy">Therapy</label>
+            </div>
+          </div>
 
-      <p>Areas of Interest:</p>
-      <label for="interests"><input type="checkbox" name="interests" id="privateLessons" value="Private Lessons">Private Lessons</label>
-      <label for="interests"><input type="checkbox" name="interests" id="groupClasses" value="Group Classes">Group Classes</label>
-      <label for="interests"><input type="checkbox" name="interests" id="danceParties" value="Dance Parties">Dance Parties</label>
-      <label for="interests"><input type="checkbox" name="interests" id="lineDancing" value="Line Dancing">Line Dancing</label>
-      <label for="interests"><input type="checkbox" name="interests" id="fitnessClasses" value="Fitness Classes">Fitness Classes</label>
+          <div class="areas-of-interest">
+            <p id="areas-of-interest-label">Areas of Interest:</p>
+            <div class="interests-container">
+              <label for="interests">
+                <input type="checkbox" name="interests" id="privateLessons" value="Private Lessons">Private Lessons</label>
+              <label for="interests">
+                <input type="checkbox" name="interests" id="groupClasses" value="Group Classes">Group Classes</label>
+              <label for="interests">
+                <input type="checkbox" name="interests" id="danceParties" value="Dance Parties">Dance Parties</label>
+              <label for="interests">
+                <input type="checkbox" name="interests" id="lineDancing" value="Line Dancing">Line Dancing</label>
+              <label for="interests">
+                <input type="checkbox" name="interests" id="fitnessClasses" value="Fitness Classes">Fitness Classes</label>
+            </div>
+          </div>
 
-      <p>Dance Styles that Interest You:</p>
-      <label for="styles"><input type="checkbox" name="styles" id="ballroom" value="ballroom">Smooth &amp; Ballroom: Waltz, Tango, Foxtrot, Viennese Waltz, Quickstep</label>
-      <label for="styles"><input type="checkbox" name="styles" id="latin" value="latin">Rhythm &amp; Latin: Cha Cha, Rumba, East Coast Swing, Jive, Bolero, Mambo, Paso Doble, Samba</label>
-      <label for="styles"><input type="checkbox" name="styles" id="club" value="club">Club: Hustle, Salsa, Bachata, Merengue, West Coast Swing, East Coast Swing, Lindy Hop, Night-Club</label>
-      <label for="styles"><input type="checkbox" name="styles" id="country" value="country">Country: Two-Step, Polka, Triple Two-Step, Night-Club Two-Step, West Coast Swing</label>
+          <div class="dance-styles">
+            <p id="dance-styles-label">Dance Styles that Interest You:</p>
+            <div class="dance-styles-container">
+              <label for="styles">
+                <input type="checkbox" name="styles" id="ballroom" value="ballroom">Smooth &amp; Ballroom: Waltz, Tango, Foxtrot, Viennese Waltz, Quickstep</label>
+              <label for="styles">
+                <input type="checkbox" name="styles" id="latin" value="latin">Rhythm &amp; Latin: Cha Cha, Rumba, East Coast Swing, Jive, Bolero, Mambo, Paso Doble, Samba</label>
+              <label for="styles">
+                <input type="checkbox" name="styles" id="club" value="club">Club: Hustle, Salsa, Bachata, Merengue, West Coast Swing, East Coast Swing, Lindy Hop, Night-Club</label>
+              <label for="styles">
+                <input type="checkbox" name="styles" id="country" value="country">Country: Two-Step, Polka, Triple Two-Step, Night-Club Two-Step, West Coast Swing</label>
+            </div>
+          </div>
 
-      <p>Additional Comments</p>
-      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-      <button id="submit" type="submit">Submit</button>
-    </form>
+          <div class="comments">
+            <p id="comments-label">Additional Comments</p>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          </div>
+          <footer>
+            <button id="submit" type="submit">Submit</button>
+          </footer>
+        </form>
+      </div>
+    </div>
   </div>
   <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
 </body>

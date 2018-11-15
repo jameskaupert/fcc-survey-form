@@ -9,6 +9,38 @@
   <title>Pet Adoption Form</title>
 </head>
 <body>
+  <div id="wrapper">
+  <h1 id="title">Adoption Background Information</h1>
+  <p id="description">Please fill out some information to help us best find a pet for you</p>
+  <form action="" id="survey-form">
+    <label id="name-label">Name</label>
+    <input id="name" type="text" required placeholder='Enter your name'>
+    <label id="email-label">Email</label>
+    <input id="email" type="email" required  placeholder='Enter your email'>
+    <label id="number-label">How many pets do you have currently?</label>
+    <input id="number" type="number" min=1 max=100 placeholder='Pets'>
 
+    <label>Are you looking for a cat or a dog?</label>
+    <select id="dropdown">
+      <option>Dog</option>
+      <option>Cat</option>
+    </select>
+
+    <fieldset>
+    <legend>Have you owned a pet before?</legend>
+    <input type="radio" name="previous" value="Yes"> Yes<br>
+    <input type="radio" name="previous" value="No"> No<br>
+</fieldset>
+
+    <label>Preferred Age:</label>
+    <input type="checkbox" value="Young">
+    <input type="checkbox" value="Old">
+
+    <label>Additional Comments:</label>
+    <textarea></textarea>
+    <button id="submit">Submit</button>
+  </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

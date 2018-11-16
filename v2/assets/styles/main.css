@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+  background-color: #FFFEC8;
+  color: #515151;
+}
+
+input,
+select,
+button {
+  font-family: 'Muli', sans-serif;
+}
+
+.wrapper {
+  min-width: 320px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding: 4rem 0 4rem 0;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Ranga', cursive;
+  color: #B9B753;
+}
+
+.description {
+  font-size: 1.5rem;
+  padding: 0 1rem 3rem 1rem;
+  text-align: center;
+}
+
+.form {
+  width: 60%;
+  font-size: 1rem;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.form-element {
+  padding: 0.75rem 0 0.75rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 0.5rem;
+}
+
+.comments textarea {
+  width: 100%;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 0px;
+  background-color: #91AE4E;
+  color: #515151;
+  font-weight: 800;
+}
+
+.submit-btn:hover {
+  background-color: #82935A;
+}

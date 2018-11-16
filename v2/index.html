@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Ranga" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/reset.css">
   <link rel="stylesheet" href="assets/styles/main.css">
   <title>Pet Adoption Form</title>
 </head>
+
 <body>
-  <div id="wrapper">
-  <h1 id="title">Adoption Background Information</h1>
-  <p id="description">Please fill out some information to help us best find a pet for you</p>
-  <form action="" id="survey-form">
-    <label id="name-label">Name</label>
-    <input id="name" type="text" required placeholder='Enter your name'>
-    <label id="email-label">Email</label>
-    <input id="email" type="email" required  placeholder='Enter your email'>
-    <label id="number-label">How many pets do you have currently?</label>
-    <input id="number" type="number" min=1 max=100 placeholder='Pets'>
+  <div id="wrapper" class="wrapper">
+    <h1 id="title">Pet Adoption Background Information</h1>
+    <p id="description" class="description">Please fill out some information to help find the best pet for you!</p>
+    <form action="" id="survey-form" class="form">
+      <div class="name form-element">
+        <label id="name-label">Name:</label>
+        <input id="name" type="text" required placeholder='Enter your name'>
+      </div>
+      <div class="email form-element">
+        <label id="email-label">Email:</label>
+        <input id="email" type="email" required placeholder='Enter your email'>
+      </div>
+      <div class="number form-element">
+        <label id="number-label">How many pets do you have currently?</label>
+        <input id="number" type="number" min=1 max=100 placeholder='# of pets'>
+      </div>
+      <div class="dropdown form-element">
+        <label>Are you looking for a cat or a dog?</label>
+        <select id="dropdown">
+          <option>Dog</option>
+          <option>Cat</option>
+        </select>
+      </div>
 
-    <label>Are you looking for a cat or a dog?</label>
-    <select id="dropdown">
-      <option>Dog</option>
-      <option>Cat</option>
-    </select>
+      <fieldset class="radio form-element">
+        <legend>Have you owned a pet before?</legend>
+        <div><input type="radio" name="previous" value="Yes"> Yes<br /></div>
+        <div><input type="radio" name="previous" value="No"> No<br /></div>
+      </fieldset>
 
-    <fieldset>
-    <legend>Have you owned a pet before?</legend>
-    <input type="radio" name="previous" value="Yes"> Yes<br>
-    <input type="radio" name="previous" value="No"> No<br>
-</fieldset>
+      <fieldset class="checkbox form-element">
+        <legend>Preferred Age:</legend>
+        <div><input type="checkbox" value="Young"> Young<br /></div>
+        <div><input type="checkbox" value="Old"> Old<br /></div>
+      </fieldset>
 
-    <label>Preferred Age:</label>
-    <input type="checkbox" value="Young">
-    <input type="checkbox" value="Old">
-
-    <label>Additional Comments:</label>
-    <textarea></textarea>
-    <button id="submit">Submit</button>
-  </form>
+      <div class="comments form-element">
+        <label>Additional Comments:</label>
+        <textarea></textarea>
+      </div>
+      <button id="submit" class="submit-btn">Submit</button>
+    </form>
   </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
